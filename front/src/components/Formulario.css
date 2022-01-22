@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+
+* {
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+input, button {
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-right-radius: 50px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomright: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+}
+
+.background {
+    width: 70%;
+    height: 459px;
+    background-color: #EDEDED;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    margin: 5% auto;
+}
+
+.formulario {
+    width: 60%;
+    margin: auto;
+}
+
+.elemento {
+    margin: 2% 2%;
+}
+
+.enviar {
+    justify-content: center;
+}
+
+.etiqueta {
+    font-weight: bold;
+}
+
+.campo {
+    padding: 0 15px;
+    width: 100%;
+    height: 44px;
+    border: 2px solid #0A1633;
+}
+
+.profissao, .celular  {
+    width: 50%;
+}
+
+.meuIp {
+    width: 70%;
+}
+
+.encontrarIp {
+    width: 30%;
+}
+
+.botaoEncontrarIp {
+    width: 100%;
+    height: 44px;
+    color: #0A1633;
+    background-color: #00D9D0;
+}
+
+.botaoLimpar, .botaoSalvar {
+    width: 30%;
+    height: 44px;
+    padding: 5px;
+    margin: 2%;
+    color: rgb(218, 208, 208);
+    background-color: #0A1633;
+}
+
+.erro {
+    color: red;
+}
+
+/* TABLET (601px - 1200px) */
+@media only screen and (max-width: 1200px)  {
+    .background {
+        width: 100%;
+        height: 459px;
+        background-color: #EDEDED;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        margin: 0;
+    }
+
+    .formulario  {
+        width: 90%;
+        display: block;
+    }
+
+    .elemento {
+        margin: 2% 2%;
+    }
+} 
+
+/* CELULAR  (0px - 600px) */
+@media only screen and (max-width: 600px)  {
+    .background {
+        width: 100%;
+        margin: 0;
+    }
+
+    .formulario  {
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+} 
